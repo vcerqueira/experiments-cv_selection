@@ -1,5 +1,5 @@
-source("general/model-specs.r")
-source("resultsanalysis/metrics.r")
+source("src/model-specs.r")
+source("src/metrics.r")
 
 train_test_pipe <- 
   function(train, test, form, num_cores=1) {

@@ -1,5 +1,6 @@
 rm(list=ls())
-load("data/datasets/tsl_uni_90_mix.rdata")
+load("assets/datasets.rdata")
+source("src/workflows.r")
 
 library(tsensembler)
 
@@ -9,8 +10,6 @@ IDS <- 1:174
 
 nfolds <- 10
 outer_split <- .7
-
-source("performanceestimation/workflows.r")
 
 results <- vector("list", length(ts_list))
 for (i in IDS) {

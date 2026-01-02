@@ -1,8 +1,8 @@
 load("results_tsdl_nf10.rdata")
 
-source("resultsanalysis/src.r")
-source("general/utils.r")
-source("general/stationarity-src.r")
+source("src/evaluation-pipelines.r")
+source("src/utils.r")
+source("src/stationarity-src.r")
 
 len <- sapply(results, function(x) length(x$data))
 methods <- colnames(results[[1]]$errhat)

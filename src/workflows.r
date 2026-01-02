@@ -1,6 +1,6 @@
-source("general/train_test_pipeline.r")
-source("general/utils.r")
-source("performanceestimation/estimation-procedures.r")
+source("src/train_test_pipeline.r")
+source("src/utils.r")
+source("src/estimation-procedures.r")
 
 workflow.get_estimations <-
   function(ds, form, nfolds, outer_split) {
